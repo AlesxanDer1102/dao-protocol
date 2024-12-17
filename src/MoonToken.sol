@@ -18,7 +18,7 @@ contract MoonToken is ERC20, ERC20Permit, ERC20Votes {
 
     function _burn(address account, uint256 amount) internal override(ERC20) {
         super._burn(account, amount);
-    }
+    }   
 
     function _update(address from, address to, uint256 value) internal override(ERC20, ERC20Votes) {
         super._update(from, to, value);
